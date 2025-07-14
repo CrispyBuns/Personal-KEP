@@ -4,12 +4,12 @@ MtMoon1FWildMons:
 	db  7, GEODUDE
 	db  9, GEODUDE
 	db  8, GEODUDE
-	db  6, BITTYBAT
-	db  9, SANDSHREW
+	db  6, GEODUDE
+	db  9, GEODUDE
 	db  9, GEODUDE
 	db  8, GEODUDE
-	db  1, BITTYBAT
-	db  8, CLEFAIRY
+	db  9, GEODUDE
+	db  7, GEODUDE
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
