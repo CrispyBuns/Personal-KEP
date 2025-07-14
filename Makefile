@@ -20,6 +20,13 @@ kep_debug_obj  := $(rom_obj:.o=_kep_debug.o)
 
 ### Build tools
 
+ifneq ($(wildcard rgbds/.*),)
+RGBDS := rgbds/
+else
+RGBDS := 
+endif
+
+
 ifeq (,$(shell which sha1sum))
 SHA1 := shasum
 else
@@ -30,7 +37,7 @@ RGBDS ?=
 RGBASM  ?= $(RGBDS)rgbasm
 RGBFIX  ?= $(RGBDS)rgbfix
 RGBGFX  ?= $(RGBDS)rgbgfx
-RGBLINK ?= $(RGBDS)rgblink
+RGBLINK ?= $(RGBDS60)rgblink
 
 
 ### Build targets
