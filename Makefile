@@ -124,7 +124,7 @@ endif
 %.asm: ;
 
 
-kep_pad        = 0x00
+kep_pad        = 0xff
 kep_debug_pad  = 0xff
 
 kep_opt        = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "PKMN: EXPN. PAK"
