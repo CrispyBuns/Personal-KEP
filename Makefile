@@ -47,8 +47,8 @@ RGBLINK ?= $(RGBDS)rgblink
 .PHONY: all red blue blue_debug clean tidy compare tools
 
 all: $(roms)
-kep:        kep.gbc
-kep_debug:  kep_debug.gbc
+kep:        kep.gb
+kep_debug:  kep_debug.gb
 
 clean: tidy
 	find gfx \
