@@ -1,6 +1,4 @@
-roms := \
-	kep.gbc \
-	kep_debug.gbc
+roms := \ kep.gb \ kep_debug.gb
 patches := \
 	kep.patch
 
@@ -37,7 +35,7 @@ RGBDS ?=
 RGBASM  ?= $(RGBDS)rgbasm
 RGBFIX  ?= $(RGBDS)rgbfix
 RGBGFX  ?= $(RGBDS)rgbgfx
-RGBLINK ?= $(RGBDS60)rgblink
+RGBLINK ?= $(RGBDS)rgblink
 
 
 ### Build targets
@@ -127,7 +125,7 @@ endif
 kep_pad        = 0xff
 kep_debug_pad  = 0xff
 
-kep_opt        = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "PKMN: EXPN. PAK"
+kep_opt        = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "PKMN PERSONAL"
 kep_debug_opt  = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "PKMN: EXPN. PAK"
 
 %.gbc: $$(%_obj) layout.link
