@@ -1,4 +1,4 @@
-roms := \ kep.gb \ kep_debug.gb
+roms := \ kep.gbc \ kep_debug.gbc
 patches := \
 	kep.patch
 
