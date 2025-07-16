@@ -5,7 +5,7 @@
 
 	db FAIRY, FAIRY ; type
 	db 45 ; catch rate
-	db 196 ; base exp
+	db 200 ; base exp
 
 	INCBIN "gfx/pokemon/front/sylveon.pic", 0, 1 ; sprite dimensions
 	dw SylveonPicFront, SylveonPicBack

@@ -1,11 +1,11 @@
 	db DEX_GEODUDE ; pokedex id
 
-	db  40,  80, 100,  20,  30
+	db  40,  80, 100,  22,  30
 	;   hp  atk  def  spd  spc
 
 	db ROCK, GROUND ; type
 	db 255 ; catch rate
-	db 86 ; base exp
+	db 70 ; base exp
 
 	INCBIN "gfx/pokemon/front/geodude.pic", 0, 1 ; sprite dimensions
 	dw GeodudePicFront, GeodudePicBack
