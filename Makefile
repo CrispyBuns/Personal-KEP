@@ -1,4 +1,6 @@
-roms := \ kep.gbc \ kep_debug.gbc
+roms := \
+	kep.gbc \
+	kep_debug.gbc
 patches := \
 	kep.patch
 
@@ -17,13 +19,6 @@ kep_obj        := $(rom_obj:.o=_kep.o)
 kep_debug_obj  := $(rom_obj:.o=_kep_debug.o)
 
 ### Build tools
-
-ifneq ($(wildcard rgbds/.*),)
-RGBDS := rgbds/
-else
-RGBDS := 
-endif
-
 
 ifeq (,$(shell which sha1sum))
 SHA1 := shasum
@@ -47,8 +42,8 @@ RGBLINK ?= $(RGBDS)rgblink
 .PHONY: all red blue blue_debug clean tidy compare tools
 
 all: $(roms)
-kep:        kep.gb
-kep_debug:  kep_debug.gb
+kep:        kep.gbc
+kep_debug:  kep_debug.gbc
 
 clean: tidy
 	find gfx \
@@ -122,10 +117,10 @@ endif
 %.asm: ;
 
 
-kep_pad        = 0xff
+kep_pad        = 0x00
 kep_debug_pad  = 0xff
 
-kep_opt        = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "PKMN PERSONAL"
+kep_opt        = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "PKMN: EXPN. PAK"
 kep_debug_opt  = -jsv -n 0 -k 01 -l 0x33 -m 0x13 -r 03 -t "PKMN: EXPN. PAK"
 
 %.gbc: $$(%_obj) layout.link
