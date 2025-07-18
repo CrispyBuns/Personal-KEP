@@ -1,5 +1,5 @@
 MtMoon1FWildMons:
-	def_grass_wildmons 10 ; encounter rate
+	def_grass_wildmons 8 ; encounter rate
 	db  8, BITTYBAT
 	db  7, BITTYBAT
 	db  9, BITTYBAT
