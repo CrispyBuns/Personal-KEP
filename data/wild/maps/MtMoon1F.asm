@@ -7,9 +7,9 @@ MtMoon1FWildMons:
 	db  6, BITTYBAT
 	db  9, SANDSHREW
 	db  9, GEODUDE
-	db  8, PARAS
+	db  8, GASTLY
 	db 10, BITTYBAT
-	db  8, CLEFAIRY
+	db  8, GASTLY
 	end_grass_wildmons
 
 	def_water_wildmons 0 ; encounter rate
