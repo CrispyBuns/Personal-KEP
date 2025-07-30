@@ -1,38 +1,7 @@
-# compiled objects
+*.exe
 *.o
-
-# compiled graphics
-*.1bpp
-*.2bpp
-*.pic
-
-# compiled roms
-*.gbc
-*.gb
-*.patch
-
-# rgbds extras
+*.obj
+*.bc
 *.map
 *.sym
 
-# tool binaries
-*.exe
-
-# precompiled python
-*.pyc
-*$py.class
-
-# save game files
-*.sgm
-*.sav
-*.rtc
-*.sn*
-*.sa*
-*.sg1
-
-.vscode/*
-
-# nix stuff
-.direnv
-.envrc
-result
